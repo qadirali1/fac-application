@@ -1,0 +1,36 @@
+* { 
+box-sizing: border-box;
+margin:0;
+padding:0;
+}
+html, body{
+    scroll-behavior: smooth;
+    height:100vh;
+    overflow-x: hidden;
+}
+.main{
+ 
+    
+}
+.img-style{
+    height: 50vh;
+    margin: auto;
+    position: relative;
+    background-repeat: no-repeat;
+    /* background-size: cover;
+    object-fit: cover; */
+    margin: 0 1rem 0 1.2rem;
+    
+}
+.desktop-screen{
+    background-image:url("images/desktop-screen.svg");
+ 
+}
+.game-controller{
+    background-image:url("images/game-controller.svg");
+    
+    
+}
+.controller-container{
+    background-color: rosybrown;
+}
