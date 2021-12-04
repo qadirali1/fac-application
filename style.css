@@ -13,24 +13,51 @@ html, body{
     
 }
 .img-style{
-    height: 50vh;
+    
     margin: auto;
     position: relative;
     background-repeat: no-repeat;
     /* background-size: cover;
     object-fit: cover; */
-    margin: 0 1rem 0 1.2rem;
+    /* margin: 0 1rem 0 1.2rem; */
     
 }
 .desktop-screen{
+    height: 65vh;
     background-image:url("images/desktop-screen.svg");
+    font-size: 8px;
+    margin: 0 1rem 0 1.2rem;
  
 }
 .game-controller{
+    height: 35vh;
     background-image:url("images/game-controller.svg");
+    margin: 0 1rem 0 3rem;
     
     
 }
 .controller-container{
     background-color: rosybrown;
+}
+
+
+.nav-container{
+    display: flex;
+}
+
+
+#welcome-display, #about-me-display, #why-fac-display, #prompts-display, #links-display{
+    display: none;
+    width: 70vw;
+    height: 30vh;
+    margin: 0 0 0 1.8rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.controller-btn-container{
+  
+ 
 }

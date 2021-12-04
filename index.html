@@ -1,39 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FAC24 Application</title>
-    <link rel="stylesheet" href="style.css"/>
-    <script src="script.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    
     <!-- Add google fonts -->
     <!-- Add favicion -->
 </head>
+
 <body>
-    <main class="main" id="container">
+
+    <main class="main">
+        <!-- Desktop display -->
         <section class="">
+            <!-- Background image container -->
             <div class="desktop-screen img-style">
-          <div class="about-me">
-              <h1>About me</h1>
-              <p></p>
-          </div>
-          <div class="why-fac hidden"></div>
-          <div class="prompt-carousel hidden"></div>
-          <div class="links hidden"></div>
-        </div>
+
+                <!-- Welcome display -->
+                <div class="welcome-display"  id="welcome-display">
+                    <h3>Hi, I am me</h3>
+                </div>
+
+                <!-- About me display hidden -->
+                <div class="about-me-container" id="about-me-display" >
+                    <h3>About Me content</h3>
+                    <p>Hi! My name is Qadir Ali I am a computer science graduate who who wants to increase his knowledge on different programming languages.
+                        Aside from coding, I love playing basketball and video games! I spend a lot of time at the park practicing my moves and if not my headphones are on and I’m in a virtual world.  
+                        I also like to spend my time helping out at the local mosque, whether that’s fund-raising or collecting food for the poor. 
+                        I also have a small 100% electric last mile delivery business, I believe that electric technology is the way forward for the climate and transport going forward.</p>
+                </div>
+
+                <!-- Why FAC display hidden -->
+                <div class="why-fac-container" id="why-fac-display">
+                    <h3>Why FAC? content</h3>
+                    <p>I came across FAC when a sibling of mine joined and graduated in FAC.., after hearing overwhelming praise for the course and the support she received from transitioning with no coding experience to a fully fledged developed is what drove me to apply.
+                        FAC’s focus on peer-led learning and community is what stands out to me the most. I feel that I can learn a lot from the course because I truly believe I will be helped and pushed on things that I would enjoy codinga.
+                        Also the fact that once I have completed I will also give back to the next cohort brings me a lot of personal satisfaction. I feel like giving back has become a less common thing these day.</p>
+                </div>
+
+                <!-- Carousel with prompts display hidden -->
+                <div class="prompts-container" id="prompts-display">
+                    <h3>Promptsc ontent</h3>
+                </div>
+                <!-- Links display hidden -->
+                <div class="links-container display" id="links-display">
+                    <h3>Links content</h3>
+                </div>
+            </div>
 
         </section>
+
+
+        <!-- Game controller -->
         <section class="controller-container">
-            
+            <!-- Background img container-->
             <div class="game-controller img-style">
-                <h1>center this</h1></div>
-            
-        
+
+                <h1>center this</h1>
+                <div class="controller-btn-container"></div>
+                <a href="#welcome" class="controller-btns" id="welcome-btn">
+                    <p>Welcome</p>
+                </a>
+                <a href="#about-me" class="controller-btns" id="about-me-btn">
+                    <p>About Me</p>
+                </a>
+                <a href="#why-fac" class="controller-btns" id="why-fac-btn">
+                    <p>Why FAC?</p>
+                </a>
+                <a href="#prompts" class="controller-btns" id="prompts-btn">
+                    <p>Prompts</p>
+                </a>
+                <a href="#links" class="controller-btns" id="links-btn">
+                    <p>Links</p>
+                </a>
+            </div>
+
+
         </section>
 
-    </main>    
-    
-    
+    </main>
+    <footer class="footer-container">
+        
+    </footer>
+    <script src="script.js" crossorigin="anonymous" type="text/javascript"></script>
 </body>
+
 </html>
