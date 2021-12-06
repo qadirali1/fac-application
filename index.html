@@ -44,7 +44,39 @@
 
                 <!-- Carousel with prompts display hidden -->
                 <div class="prompts-container" id="prompts-display">
-                    <h3>Promptsc ontent</h3>
+                    <h3>Prompts content</h3>
+                    <div class="carousel">
+                        <button class="carousel-button carousel-button-left is-hidden">
+                            <img src= "images/left-arrow.svg" alt= "">
+                        </button>
+                        <div class="carousel-track-container">
+                            <ul class="carousel-track">
+                                <li class="carousel-slide current-slide">
+                                    <img class= "carousel-image" src= "images/ocean1.jpeg" alt= "">
+                                </li>
+                                <li class="carousel-slide">
+                                    <img class= "carousel-image" src= "images/ocean.jpeg" alt= "">
+                                </li>
+                                <li class="carousel-slide">
+                                    <img class= "carousel-image" src= "images/ocean3.jpeg" alt= "">
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="carousel-button carousel-button-right">
+                            <img src= "images/right-arrow.svg" alt= "">
+                        </button>
+
+                        <div class="carousel-nav">
+                            <button class="carousel-indicator current-slide"></button>
+                            <button class="carousel-indicator"></button>
+                            <button class="carousel-indicator"></button>
+
+                        </div>
+
+                    </div>
+
+
+
                 </div>
                 <!-- Links display hidden -->
                 <div class="links-container display" id="links-display">
@@ -60,7 +92,7 @@
             <!-- Background img container-->
             <div class="game-controller img-style">
 
-                <h1>center this</h1>
+                
                 <div class="controller-btn-container"></div>
                 <a href="#welcome" class="controller-btns" id="welcome-btn">
                     <p>Welcome</p>
@@ -84,7 +116,24 @@
 
     </main>
     <footer class="footer-container">
-        
+        <div class="footer-links">
+            <ul>
+                <li><a href="#welcome-container">Welcome</a></li>
+                <li><a href="#about-me-container">About Me</a></li>
+                <li><a href="#why-fac-container">Why FAC?</a> </li>
+                <li><a href="#prompts-container">Prompts</a></li>
+                <li><a href="#links-container">Links</a></li>
+            </ul>   
+        </div>
+        <div class="footer-logo">
+            <a href=""><img src=""></a>
+            <a href=""><img src=""></a>
+            <a href=""><img src=""></a> 
+        </div>
+        <div class="copyright"> 
+            
+            <p>Copyright©️ 2021 Qadir Ali. All Rights Reserved. </p>
+        </div>
     </footer>
     <script src="script.js" crossorigin="anonymous" type="text/javascript"></script>
 </body>

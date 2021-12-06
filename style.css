@@ -6,7 +6,7 @@ padding:0;
 html, body{
     scroll-behavior: smooth;
     height:100vh;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 .main{
  
@@ -17,22 +17,30 @@ html, body{
     margin: auto;
     position: relative;
     background-repeat: no-repeat;
+    background-size: contain;
+    background-size: cover;
+    
     /* background-size: cover;
     object-fit: cover; */
     /* margin: 0 1rem 0 1.2rem; */
     
 }
 .desktop-screen{
-    height: 65vh;
+    height: 50vh;
     background-image:url("images/desktop-screen.svg");
     font-size: 8px;
     margin: 0 1rem 0 1.2rem;
+    
+    
+    
  
 }
 .game-controller{
-    height: 35vh;
+    height: 40vh;
     background-image:url("images/game-controller.svg");
-    margin: 0 1rem 0 3rem;
+    margin: 0 3.2rem 0 2.5rem;
+   
+    /* background-position-x: 15rem ; */
     
     
 }
@@ -49,7 +57,7 @@ html, body{
 #welcome-display, #about-me-display, #why-fac-display, #prompts-display, #links-display{
     display: none;
     width: 70vw;
-    height: 30vh;
+    height: 32vh;
     margin: 0 0 0 1.8rem;
     flex-direction: column;
     align-items: center;
@@ -57,7 +65,113 @@ html, body{
 
 }
 
-.controller-btn-container{
-  
- 
+/* Footer styling */
+.footer-container {
+    
+    background-color: rosybrown;
+    
 }
+
+footer {
+  
+  height: 10vh;
+}
+
+.footer-links{
+    
+    font-size: 15px;
+    
+    
+    
+}
+
+ul  {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+a {
+    text-decoration: none;
+    padding-inline: 0.3rem;
+    
+    
+}
+
+
+/* Carousel styling  */
+.carousel{
+    position: relative;
+    width: 80%;
+    height: 20vh;
+    margin: 0 auto; 
+    
+}
+.carousel-track-container{
+    height: 100%;
+   position: relative;
+   overflow: hidden; /*hides images so only current-slide visable*/
+    /* top: 0.3rem; */
+    /* bottom:0; */
+}
+.carousel-image{  
+    width: 100%;
+    height:100%; /* messes up image height*/
+    object-fit: cover;
+}
+.carousel-track{  
+    list-style: none;
+    padding:0;
+    margin:0;
+    position: relative;
+    height: 100%;
+    transition: transform 250ms ease-in;
+}
+.carousel-slide{
+    position: absolute;  /*slides stack on top of each other*/
+    top:0;
+    bottom: 0;
+    width: 100%;
+}
+.carousel-button{
+    position:absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+.carousel-button-right{
+    right: -23px
+}
+.carousel-button-left{
+    left: -20px;
+}
+.carousel-button img{
+    width: 15px;
+}
+.carousel-nav{
+    
+    display:flex;
+    justify-content: center;
+    padding: 10px 0;
+    margin-left: 0.5rem;
+    margin-top: -0.77rem;
+}
+.carousel-indicator{
+    border: 0;
+    border-radius: 50%; /* makes it into a circle */
+    height: 7px;
+    width: 7px;
+    background: rgba(0, 0, 0, 0.3);
+    margin: 0 12px;
+   cursor: pointer;
+}
+.carousel-indicator.current-slide{
+    background-color: rgba(0, 0, 0, 0.8)
+}
+.is-hidden {
+    display:none;
+}
+/*  */
