@@ -15,6 +15,14 @@ const whyFacDisplay = document.getElementById("why-fac-display")
 const promptsDisplay = document.getElementById("prompts-display");
 const linksDisplay = document.getElementById("links-display");
 
+// footer buttons logic
+const welcomeBtnFooter = document.getElementById('welcome-btnfooter');
+const aboutMeBtnFooter = document.getElementById('about-me-btnfooter');
+const whyFacBtnFooter = document.getElementById('why-fac-btnfooter');
+const promptsBtnFooter = document.getElementById('prompts-btnfooter');
+const linkBtnFooter = document.getElementById('links-btnfooter');
+
+
 //controller btn show/hide sections/display
 
 const toggleWelcomeDisplay = () => {
@@ -61,6 +69,13 @@ aboutMeBtn.addEventListener("click", toggleAboutMeDisplay);
 whyFacBtn.addEventListener("click", toggleWhyFacDisplay);
 promptsBtn.addEventListener("click", togglePromptsCarouselDisplay);
 linkBtn.addEventListener("click", toggleLinksDisplay);
+
+// logic for footer buttons
+welcomeBtnFooter.addEventListener("click", toggleWelcomeDisplay);
+aboutMeBtnFooter.addEventListener("click", toggleAboutMeDisplay);
+whyFacBtnFooter.addEventListener("click", toggleWhyFacDisplay);
+promptsBtnFooter.addEventListener("click", togglePromptsCarouselDisplay);
+linkBtnFooter.addEventListener("click", toggleLinksDisplay);
 
 
 
