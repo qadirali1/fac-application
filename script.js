@@ -76,11 +76,22 @@ const dotsNav = document.querySelector(".carousel-nav");
 const dots = Array.from(dotsNav.children);
 console.log(nextBtn, prevBtn, dotsNav, dots);
 
-promptsDisplay.style.display = "flex"; 
+// show display to allow carousel to get div width
+function showDisplay(){
+    return promptsDisplay.style.display = "flex";
+    
+}
 
+// hide display after 
+function hideDisplay(){
+    return promptsDisplay.style.display = "none";
+}
+
+
+showDisplay();
 const slideWidth = slides[0].getBoundingClientRect().width;
 console.log(slideWidth);
-
+hideDisplay();
 
 // put the slides next to each other 
 const setSlidePosition = (slide, index) => {
@@ -116,8 +127,6 @@ if(targetIndex === 0){
     nextBtn.classList.remove('is-hidden');
 }
 }
-
-
 
 // when left button is clicked, slides move left
 prevBtn.addEventListener('click', e =>{
@@ -174,3 +183,14 @@ dotsNav.addEventListener('click', e => {
 
 })
 
+//  keyboard nav
+function keyboardNav (e){
+    if(e.keyCode === 39){
+  
+    }
+    else if(e.keyCode === 37){
+ 
+    }
+};
+//   event listner for keyboard navigation 
+document.addEventListener("keydown", keyboardNav);
