@@ -4,31 +4,31 @@ const welcomeBtn = document.getElementById('welcome-btn');
 const aboutMeBtn = document.getElementById('about-me-btn');
 console.log('aboutMeBtn', aboutMeBtn);
 const whyFacBtn = document.getElementById('why-fac-btn');
-const promptsBtn = document.getElementById('prompts-btn');
-const linkBtn = document.getElementById('links-btn');
+const galleryBtn = document.getElementById('gallery-btn');
+const linkBtn = document.getElementById('coding-btn');
 
 // get display text
 const welcomeDisplay = document.getElementById("welcome-display");
 const aboutMeDisplay = document.getElementById("about-me-display");
 console.log('aboutMeDisplay', aboutMeDisplay);
 const whyFacDisplay = document.getElementById("why-fac-display")
-const promptsDisplay = document.getElementById("prompts-display");
-const linksDisplay = document.getElementById("links-display");
+const galleryDisplay = document.getElementById("gallery-display");
+const codingDisplay = document.getElementById("coding-display");
 
 // footer buttons logic
 const welcomeBtnFooter = document.getElementById('nav-welcome-btn');
 const aboutMeBtnFooter = document.getElementById('nav-about-me-btn');
 const whyFacBtnFooter = document.getElementById('nav-why-fac-btn');
-const promptsBtnFooter = document.getElementById('nav-prompts-btn');
-const linkBtnFooter = document.getElementById('nav-links-btn');
+const galleryBtnFooter = document.getElementById('nav-gallery-btn');
+const linkBtnFooter = document.getElementById('nav-coding-btn');
 
 
 //controller btn show/hide sections/display
 
 const toggleWelcomeDisplay = () => {
     whyFacDisplay.style.display = "none";
-    promptsDisplay.style.display = "none";
-    linksDisplay.style.display = "none";
+    galleryDisplay.style.display = "none";
+    codingDisplay.style.display = "none";
     aboutMeDisplay.style.display = "none";
     welcomeDisplay.style.display = (welcomeDisplay.style.display === "flex") ? "none" : "flex";
 }
@@ -36,30 +36,30 @@ const toggleWelcomeDisplay = () => {
 const toggleAboutMeDisplay = () => {
     welcomeDisplay.style.display = "none";
     whyFacDisplay.style.display = "none";
-    promptsDisplay.style.display = "none";
-    linksDisplay.style.display = "none";
+    galleryDisplay.style.display = "none";
+    codingDisplay.style.display = "none";
     aboutMeDisplay.style.display = (aboutMeDisplay.style.display === "flex") ? "none" : "flex";
 }
 const toggleWhyFacDisplay = () => {;
     welcomeDisplay.style.display = "none";
     aboutMeDisplay.style.display = "none";
-    promptsDisplay.style.display = "none";
-    linksDisplay.style.display = "none";
+    galleryDisplay.style.display = "none";
+    codingDisplay.style.display = "none";
     whyFacDisplay.style.display = (whyFacDisplay.style.display === "flex") ? "none" : "flex";
 }
-const togglePromptsCarouselDisplay = () => {
+const togglegalleryCarouselDisplay = () => {
     welcomeDisplay.style.display = "none";
     aboutMeDisplay.style.display = "none";
     whyFacDisplay.style.display = "none";
-    linksDisplay.style.display = "none";
-    promptsDisplay.style.display = (promptsDisplay.style.display === "flex") ? "none" : "flex";
+    codingDisplay.style.display = "none";
+    galleryDisplay.style.display = (galleryDisplay.style.display === "flex") ? "none" : "flex";
 }
-const toggleLinksDisplay = () => {  
+const togglecodingDisplay = () => {  
     welcomeDisplay.style.display = "none";
     aboutMeDisplay.style.display = "none";
     whyFacDisplay.style.display = "none";
-    promptsDisplay.style.display = "none";
-    linksDisplay.style.display = (linksDisplay.style.display === "flex") ? "none" : "flex";
+    galleryDisplay.style.display = "none";
+    codingDisplay.style.display = (codingDisplay.style.display === "flex") ? "none" : "flex";
 }
 
 // eventListener on click 
@@ -67,15 +67,15 @@ const toggleLinksDisplay = () => {
 welcomeBtn.addEventListener("click", toggleWelcomeDisplay);
 aboutMeBtn.addEventListener("click", toggleAboutMeDisplay);
 whyFacBtn.addEventListener("click", toggleWhyFacDisplay);
-promptsBtn.addEventListener("click", togglePromptsCarouselDisplay);
-linkBtn.addEventListener("click", toggleLinksDisplay);
+galleryBtn.addEventListener("click", togglegalleryCarouselDisplay);
+linkBtn.addEventListener("click", togglecodingDisplay);
 
 // logic for footer buttons
 welcomeBtnFooter.addEventListener("click", toggleWelcomeDisplay);
 aboutMeBtnFooter.addEventListener("click", toggleAboutMeDisplay);
 whyFacBtnFooter.addEventListener("click", toggleWhyFacDisplay);
-promptsBtnFooter.addEventListener("click", togglePromptsCarouselDisplay);
-linkBtnFooter.addEventListener("click", toggleLinksDisplay);
+galleryBtnFooter.addEventListener("click", togglegalleryCarouselDisplay);
+linkBtnFooter.addEventListener("click", togglecodingDisplay);
 
 
 
@@ -93,13 +93,13 @@ console.log(nextBtn, prevBtn, dotsNav, dots);
 
 // show display to allow carousel to get div width
 function showDisplay(){
-    return promptsDisplay.style.display = "flex";
+    return galleryDisplay.style.display = "flex";
     
 }
 
 // hide display after 
 function hideDisplay(){
-    return promptsDisplay.style.display = "none";
+    return galleryDisplay.style.display = "none";
 }
 
 

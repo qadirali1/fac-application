@@ -24,89 +24,108 @@
                 <li><a id="nav-welcome-btn" href="#welcome-container">Welcome</a></li>
                 <li><a id="nav-about-me-btn" href="#about-me-container">About Me</a></li>
                 <li><a id="nav-why-fac-btn" href="#why-fac-container">Why FAC?</a> </li>
-                <li><a id="nav-prompts-btn" href="#prompts-container">Prompts</a></li>
-                <li><a id="nav-links-btn" href="#links-container">Links</a></li>
+                <li><a id="nav-gallery-btn" href="#gallery-container">Gallery</a></li>
+                <li><a id="nav-coding-btn" href="#coding-container">Coding</a></li>
             </ul>
         </nav>
     </header>
-    <main class="main">
+    <main>
         <!-- Desktop display -->
-        <section class="desktop-container">
+        <section class="desktop-container ">
             <!-- Background image container -->
             <div class="desktop-screen img-style">
+
                 <img src="images/desktop-screen.svg" alt="desktop illustration">
+                <div class="content">
+                    <!-- Welcome display -->
+                    <article class="welcome-display" id="welcome-display">
+                        <h3 class="font-size-h3">Hi, I am me</h3>
+                    </article>
 
-                <!-- Welcome display -->
-                <div class="welcome-display" id="welcome-display">
-                    <h3>Hi, I am me</h3>
-                </div>
+                    <!-- About me display hidden -->
+                    <article class="about-me-container" id="about-me-display">
+                        <h3 class="font-size-h3">About Me content</h3>
+                        <p>Hi! My name is Qadir Ali I am a computer science graduate who who wants to increase his
+                            knowledge
+                            on different programming languages.
+                            Aside from coding, I love playing basketball and video games! I spend a lot of time at the
+                            park
+                            practicing my moves and if not my headphones are on and I’m in a virtual world.
+                            I also like to spend my time helping out at the local mosque, whether that’s fund-raising or
+                            collecting food for the poor.
+                            I also have a small 100% electric last mile delivery business, I believe that electric
+                            technology is the way forward for the climate and transport going forward.
+                            Hi! My name is Qadir Ali I am a computer science graduate who who wants to increase his
+                            knowledge
+                            on different programming languages.
+                            Aside from coding, I love playing basketball and video games! I spend a lot of time at the
+                            park
+                            practicing my moves and if not my headphones are on and I’m in a virtual world.
+                            I also like to spend my time helping out at the local mosque, whether that’s fund-raising or
+                            collecting food for the poor.
+                            I also have a small 100% electric last mile delivery business, I believe that electric
+                            technology is the way forward for the climate and transport going forward.
+                        </p>
+                    </article>
 
-                <!-- About me display hidden -->
-                <div class="about-me-container" id="about-me-display">
-                    <h3>About Me content</h3>
-                    <p>Hi! My name is Qadir Ali I am a computer science graduate who who wants to increase his knowledge
-                        on different programming languages.
-                        Aside from coding, I love playing basketball and video games! I spend a lot of time at the park
-                        practicing my moves and if not my headphones are on and I’m in a virtual world.
-                        I also like to spend my time helping out at the local mosque, whether that’s fund-raising or
-                        collecting food for the poor.
-                        I also have a small 100% electric last mile delivery business, I believe that electric
-                        technology is the way forward for the climate and transport going forward.</p>
-                </div>
+                    <!-- Why FAC display hidden -->
+                    <article class="why-fac-container" id="why-fac-display">
+                        <h3 class="font-size-h3">Why FAC? content</h3>
+                        <p>I came across FAC when a sibling of mine joined and graduated in FAC.., after hearing
+                            overwhelming praise for the course and the support she received from transitioning with no
+                            coding experience to a fully fledged developed is what drove me to apply.
+                            FAC’s focus on peer-led learning and community is what stands out to me the most. I feel
+                            that I
+                            can learn a lot from the course because I truly believe I will be helped and pushed on
+                            things
+                            that I would enjoy codinga.
+                            Also the fact that once I have completed I will also give back to the next cohort brings me
+                            a
+                            lot of personal satisfaction. I feel like giving back has become a less common thing these
+                            day.
+                        </p>
+                    </article>
 
-                <!-- Why FAC display hidden -->
-                <div class="why-fac-container" id="why-fac-display">
-                    <h3>Why FAC? content</h3>
-                    <p>I came across FAC when a sibling of mine joined and graduated in FAC.., after hearing
-                        overwhelming praise for the course and the support she received from transitioning with no
-                        coding experience to a fully fledged developed is what drove me to apply.
-                        FAC’s focus on peer-led learning and community is what stands out to me the most. I feel that I
-                        can learn a lot from the course because I truly believe I will be helped and pushed on things
-                        that I would enjoy codinga.
-                        Also the fact that once I have completed I will also give back to the next cohort brings me a
-                        lot of personal satisfaction. I feel like giving back has become a less common thing these day.
-                    </p>
-                </div>
+                    <!-- Carousel with gallery display hidden -->
+                    <div class="gallery-container" id="gallery-display">
+                        <h3 class="font-size-h3 carousel-margin-med">gallery content</h3>
+                        <div class="carousel">
+                            <button class="carousel-button carousel-button-left is-hidden">
+                                <img src="images/left-arrow.svg" alt="">
+                            </button>
+                            <div class="carousel-track-container">
+                                <ul class="carousel-track">
+                                    <li class="carousel-slide current-slide">
+                                        <img class="carousel-image" src="images/ocean1.jpeg" alt="">
+                                    </li>
+                                    <li class="carousel-slide">
+                                        <img class="carousel-image" src="images/ocean.jpeg" alt="">
+                                    </li>
+                                    <li class="carousel-slide">
+                                        <img class="carousel-image" src="images/ocean3.jpeg" alt="">
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="carousel-button carousel-button-right">
+                                <img src="images/right-arrow.svg" alt="">
+                            </button>
 
-                <!-- Carousel with prompts display hidden -->
-                <div class="prompts-container" id="prompts-display">
-                    <h3 class="margin-med">Prompts content</h3>
-                    <div class="carousel">
-                        <button class="carousel-button carousel-button-left is-hidden">
-                            <img src="images/left-arrow.svg" alt="">
-                        </button>
-                        <div class="carousel-track-container">
-                            <ul class="carousel-track">
-                                <li class="carousel-slide current-slide">
-                                    <img class="carousel-image" src="images/ocean1.jpeg" alt="">
-                                </li>
-                                <li class="carousel-slide">
-                                    <img class="carousel-image" src="images/ocean.jpeg" alt="">
-                                </li>
-                                <li class="carousel-slide">
-                                    <img class="carousel-image" src="images/ocean3.jpeg" alt="">
-                                </li>
-                            </ul>
+                            <div class="carousel-nav">
+                                <button class="carousel-indicator current-slide"></button>
+                                <button class="carousel-indicator"></button>
+                                <button class="carousel-indicator"></button>
+
+                            </div>
+
                         </div>
-                        <button class="carousel-button carousel-button-right">
-                            <img src="images/right-arrow.svg" alt="">
-                        </button>
 
-                        <div class="carousel-nav">
-                            <button class="carousel-indicator current-slide"></button>
-                            <button class="carousel-indicator"></button>
-                            <button class="carousel-indicator"></button>
 
-                        </div>
 
                     </div>
-
-
-
-                </div>
-                <!-- Links display hidden -->
-                <div class="links-container display" id="links-display">
-                    <h3>Links content</h3>
+                    <!-- coding display hidden -->
+                    <article class="coding-container display" id="coding-display">
+                        <h3 class="font-size-h3">Coding content</h3>
+                    </article>
                 </div>
             </div>
 
@@ -125,41 +144,43 @@
                     <div class="row1"> <a href="#welcome" class="controller-btns" id="welcome-btn">
                             <p>Welcome</p>
                         </a></div>
-    
+
                     <div class="row2"><a href="#about-me" class="controller-btns" id="about-me-btn">
                             <p>About Me</p>
                         </a></div>
-    
+
                     <div class="row3"><a href="#why-fac" class="controller-btns" id="why-fac-btn">
                             <p>Why FAC?</p>
                         </a></div>
-    
-                    <div class="row4"> <a href="#prompts" class="controller-btns" id="prompts-btn">
-                            <p>Prompts</p>
+
+                    <div class="row4"> <a href="#gallery" class="controller-btns" id="gallery-btn">
+                            <p>Gallery</p>
                         </a></div>
-    
-                    <div class="row5"> <a href="#links" class="controller-btns" id="links-btn">
-                            <p>Links</p>
+
+                    <div class="row5"> <a href="#coding" class="controller-btns" id="coding-btn">
+                            <p>Coding</p>
                         </a></div>
                 </div>
 
             </div>
 
-            
+
 
         </section>
 
     </main>
     <footer class="footer-container">
         <div class="footer-logo">
-            <a href="https://www.freecodecamp.org/qadirali" target="_blank"><img src="images/fcc.jpeg" alt="free code camp logo"></a>
+            <a href="https://www.freecodecamp.org/qadirali" target="_blank"><img src="images/fcc.jpeg"
+                    alt="free code camp logo"></a>
             <a href="https://github.com/qadirali1/fac-application" target="_blank"><img src="images/github.jpeg"
                     alt="github camp logo"></a>
             <a href="https://replit.com/@qadirali1" target="_blank"><img src="images/replit.png" alt="replit logo"></a>
 
-            <a href="https://stackblitz.com/@qadirali1" target="_blank"><img src="images/stackblitz.png" alt="stackblitz logo"></a>        </div>
+            <a href="https://stackblitz.com/@qadirali1" target="_blank"><img src="images/stackblitz.png"
+                    alt="stackblitz logo"></a>
+        </div>
         <div class="copyright">
-
             <p>Copyright©️ 2021 Qadir Ali. All Rights Reserved. </p>
         </div>
     </footer>
