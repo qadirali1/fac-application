@@ -16,11 +16,11 @@ const promptsDisplay = document.getElementById("prompts-display");
 const linksDisplay = document.getElementById("links-display");
 
 // footer buttons logic
-const welcomeBtnFooter = document.getElementById('welcome-btnfooter');
-const aboutMeBtnFooter = document.getElementById('about-me-btnfooter');
-const whyFacBtnFooter = document.getElementById('why-fac-btnfooter');
-const promptsBtnFooter = document.getElementById('prompts-btnfooter');
-const linkBtnFooter = document.getElementById('links-btnfooter');
+const welcomeBtnFooter = document.getElementById('nav-welcome-btn');
+const aboutMeBtnFooter = document.getElementById('nav-about-me-btn');
+const whyFacBtnFooter = document.getElementById('nav-why-fac-btn');
+const promptsBtnFooter = document.getElementById('nav-prompts-btn');
+const linkBtnFooter = document.getElementById('nav-links-btn');
 
 
 //controller btn show/hide sections/display

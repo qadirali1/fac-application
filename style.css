@@ -7,47 +7,72 @@ html, body{
     scroll-behavior: smooth;
     height:100vh;
     /* overflow-x: hidden; */
+    /* font-family: var(--fira-font); */
+    font-family: var(--roboto-font);
 }
-.main{
- 
-    
+
+:root{
+--fira-font:'Fira Mono', monospace;
+--oranienbaum-font: 'Oranienbaum', serif;
+--roboto-font: 'Roboto Mono', monospace;
 }
+
 .img-style{
-    
     margin: auto;
     position: relative;
     background-repeat: no-repeat;
     background-size: contain;
     background-size: cover;
-    
     /* background-size: cover;
     object-fit: cover; */
     /* margin: 0 1rem 0 1.2rem; */
-    
 }
 .desktop-screen{
-    height: 50vh;
-    background-image:url("images/desktop-screen.svg");
-    font-size: 8px;
+    /* height: 50vh;
+    background-image:url("images/desktop-screen.svg"); */
+    font-size: 0.5rem;
     margin: 0 1rem 0 1.2rem;
-    
-    
-    
- 
+    height:100%;
+    z-index: 5;
+}
+.desktop-screen img{
+    position: absolute;
+    z-index: -5;
+}
+
+.desktop-container{
+    background: #8FBCBC;
+    width:100%;
+    height:50vh;
+
 }
 .game-controller{
-    height: 40vh;
-    background-image:url("images/game-controller.svg");
-    margin: 0 3.2rem 0 2.5rem;
-   
+    /* height: 41vh; */
+    /* background-image:url("images/game-controller.svg"); */
+    height: 100%;
     /* background-position-x: 15rem ; */
+    /* z-index: 1; */
+    
+}
+.game-controller img{
+    /* background-image:url("images/game-controller.svg"); */
+    /* margin: 0 3.2rem 0 2.2rem; */
+    /* background-position-x: 15rem ; */
+    width:70%;
+    margin-left: 2rem;
+    /* height:auto; */
     
     
 }
 .controller-container{
     background-color: rosybrown;
+    /* z-index:0; */
+    height:40vh;
+    
 }
-
+.controller-btn-container{
+    /* z-index: 150; */
+}
 
 .nav-container{
     display: flex;
@@ -62,49 +87,74 @@ html, body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    /* overflow-y: scroll; */
 
+}
+
+.margin-med{
+    margin-top: 1rem;
+    margin-bottom: 0.1rem;
 }
 
 /* Footer styling */
 .footer-container {
-    
     background-color: rosybrown;
-    
+    position: relative;
+    margin: 0 auto;
+    /* padding: 1rem 0.5rem 0.5rem 0.5rem; */
+    text-align: center;  
 }
-
 footer {
-  
   height: 10vh;
 }
-
-.footer-links{
-    
-    font-size: 15px;
-    
-    
-    
+.footer-logo img{
+    width:1.3rem;
+    border-radius: 50%;
+}
+.copyright p{
+    /* padding-top: 1rem; */
+    font-size: 0.5em;
 }
 
-ul  {
-    list-style: none;
+.nav-links{
+    text-align: center;
+    font-size: 0.7rem;  
+}
+.nav-links ul{
     display: flex;
-    flex-direction: row;
-    
-    
+    justify-content:space-between;
+    margin: 0.5rem;
 }
-a {
+.nav-links li{
+    
+    list-style: none;
+}
+.nav-links li a{
     text-decoration: none;
-    padding-inline: 0.3rem;
+    /* padding:0.3rem; */
     
-    
+    color: #005741;
+    background-color: #f1f2eb;
+
+}
+.nav-links li a:hover{
+    text-decoration: none;
+    border-radius: 5%;
+    padding:0.5rem;
+    background-color: #005741;
+    color:#f1f2eb; 
 }
 
+.controller-btns a{
+    text-decoration: none;
+    padding: 0.3rem;
+}
 
 /* Carousel styling  */
 .carousel{
     position: relative;
     width: 80%;
-    height: 20vh;
+    height: 18vh;
     margin: 0 auto; 
     
 }
@@ -136,36 +186,39 @@ a {
 }
 .carousel-button{
     position:absolute;
-    top: 60%;
+    top: 50%;
     transform: translateY(-50%);
     background: transparent;
     border: 0;
     cursor: pointer;
 }
 .carousel-button-right{
-    right: -23px
+    right: -0.5rem;
+    background-color: royalblue;
 }
 .carousel-button-left{
-    left: -20px;
+    left: -1.4rem;
 }
 .carousel-button img{
-    width: 15px;
+    width: 1rem;
+   
 }
 .carousel-nav{
     
     display:flex;
     justify-content: center;
-    padding: 10px 0;
+    padding: 0.7rem 0;
     margin-left: 0.5rem;
     margin-top: -0.77rem;
+
 }
 .carousel-indicator{
     border: 0;
     border-radius: 50%; /* makes it into a circle */
-    height: 7px;
-    width: 7px;
+    height: 0.5rem;
+    width: 0.5rem;
     background: rgba(0, 0, 0, 0.3);
-    margin: 0 12px;
+    margin:  0.3rem 0.8rem;
    cursor: pointer;
 }
 .carousel-indicator.current-slide{
@@ -180,22 +233,24 @@ a {
     
     display: grid;
     cursor: pointer;
-  grid-template-rows: repeat(6, 35px);
-  grid-template-columns: repeat(8, 28px);
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(10, 1fr);
+  margin: -10rem 0 0 3rem;
   
-
-
+  font-size: 0.5em;
+  /* z-index: 150; */
 
   }
-  /* .hide-text{
+  .hide-text{
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden;
-  } */
+  }
   .row1 {
-    
-    grid-column: 2 / 4;
+ 
+    grid-column: 3 / 5;
     grid-row: 5/6 ;
+    /* z-index: 150; */
  
   }
 
@@ -205,30 +260,36 @@ a {
     grid-row: 5/6 ;
     justify-self: flex-end;
     
-    font-size: 11px;
+   
+    
     padding-top: 5px;
+    /* z-index: 150; */
     
   }
 
   .row3{
       grid-column: 6/8;
       grid-row: 4/5;
-      font-size: 11px;
+   
+      
       padding-top: 10px;
       padding-left: 5px;
+      /* z-index: 150; */
      
   }
 
   .row4{
     grid-column: 8/9;
     grid-row: 5/6;
-    font-size: 11px;
+   
     padding-top: 5px;
+    /* z-index: 150; */
     
   }
 
   .row5{
       grid-column: 7/8;
       grid-row: 6/7;
-      font-size: 11px;
+      
+      /* z-index: 150; */
   }
