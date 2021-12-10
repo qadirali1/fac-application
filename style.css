@@ -85,6 +85,7 @@ html, body{
 .desktop-screen img{
     position: absolute;
     z-index: -5;
+   
 }
 
 .img-style{
@@ -102,7 +103,7 @@ html, body{
     display: none;
     width: 65vw;
     /* height: 25vh; */
-    height:60%;
+    height:55%;
     margin: 0 auto;
     flex-direction: column;
     align-items: start;
@@ -110,18 +111,15 @@ html, body{
     overflow-x: hidden;
 }
 
+
 .font-size-h3 {
     font-size: 2em;
     margin-top: 0.5rem;
 }
 
-.font-size-p {
-    font-size: 1em;
-}
 
-.why-fac-container h3 {
-    font-size: 2em;
-}
+
+
 
 .desktop-screen p {
  font-size: 1em;
@@ -135,8 +133,9 @@ html, body{
 .carousel{
     position: relative;
     width: 80%;
-    height: 18vh;
+    height: 16vh;
     margin: 0 auto; 
+    display: block;
 }
 .carousel-track-container{
     height: 100%;
@@ -152,6 +151,7 @@ html, body{
     position: relative;
     height: 100%;
     transition: transform 250ms ease-in;
+    
 }
 .carousel-slide{
     position: absolute;  /*slides stack on top of each other*/
@@ -237,9 +237,11 @@ html, body{
     
     display: grid;
     cursor: pointer;
-    grid-template-rows: repeat(7, 1fr);
-    grid-template-columns: repeat(10, 1fr);
-    margin: -10rem 0 0 3rem;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(8, 1fr);
+    margin: -6rem 0 0 3rem;
+   
+    
 }
 
 
@@ -265,7 +267,7 @@ html, body{
   .row1 {
  
     grid-column: 2/3;
-    grid-row: 5/7 ;
+    grid-row: 3/4 ;
     /* z-index: 150; */
  
   }
@@ -273,34 +275,33 @@ html, body{
   /* about me position */
   .row2 {
     
-    grid-column: 5/7;
-    grid-row: 5/6 ;
-    padding-top: 5px;
+    grid-column: 4/6;
+    grid-row: 3/4 ;
+   
     /* z-index: 150; */
     
   }
 
   /* why FAC position */
   .row3{
-      grid-column: 6/8;
-      grid-row: 4/5;
-      padding-top: 10px;
-      padding-left: 5px;
+      grid-column: 5/7;
+      grid-row: 1/2;
+   
       /* z-index: 150; */
      
   }
 
   /* gallery position */
   .row4{
-    grid-column: 7/8;
-    grid-row: 5/6;
-    padding-top: 5px;
+    grid-column: 6/7;
+    grid-row: 3/4;
+   
     /* z-index: 150; */
   }
 /* links posi */
   .row5{
-      grid-column: 6/7;
-      grid-row: 7/8;
+      grid-column: 5/6;
+      grid-row: 6/7;
       
       /* z-index: 150; */
   }
@@ -337,32 +338,451 @@ footer {
     font-size: 0.5em;
 }
 
-
-@media only screen and (min-width: 525px) {
-    #welcome-display, #about-me-display, #why-fac-display, #gallery-display, #coding-display{
-        margin: 0 0 0 4rem;
-        height: 30vh;
+@media only screen and (min-width: 480px) and (max-width: 525px){
+    
+    .nav-links{
+        
+        font-size: 1rem;  
     }
     
-    .about-me-container h3 {
-        font-size: 4em;
+    
+    .desktop-container{
+      
+        height:52vh;
     }
+    
+    
+    #welcome-display, #about-me-display, #why-fac-display, #gallery-display, #coding-display{
+   
+    height: 28vh;
+    margin-top: 1rem;
+   
+    }   
+
+    
+    
+    .font-size-h3 {
+        font-size: 3em;
+        
+    }
+    
+    
+    .desktop-screen p {
+     font-size: 1.3em;
+    }
+
+    
+
+    .carousel{
+        margin-top: 0.5rem;
+        width: 80%;
+    }
+
+    .game-controller img{
+        margin-left: 3.5rem;
+    }
+    .controller-btn-container a{
+        
+        font-size: 1em;
+    }
+
+      .flex-grid {
+        margin: -10rem 0 0 5rem;
+    }
+      .footer-logo img{
+        width:2rem;
+        border-radius: 50%;
+    }
+      .copyright p{
+        /* padding-top: 1rem; */
+        font-size: 1em;
+    }
+
+    
+}
+
+  
+  
+
+@media only screen and (min-width: 525px) and (max-width: 710x) {
+    
+    .nav-links{
+        
+        font-size: 1rem;  
+    }
+    
+    
+    .desktop-container{
+      
+        height:52vh;
+    }
+    
+    
+    #welcome-display, #about-me-display, #why-fac-display, #gallery-display, #coding-display{
+    padding-top: 0.5rem;
+    height: 28vh;
+    margin-top: 1rem;
+   
+    }   
+
+    
+    
+    .font-size-h3 {
+        font-size: 3em;
+        
+    }
+    
     
     .desktop-screen p {
      font-size: 1.5em;
     }
+
+    
+
+    .carousel{
+        margin-top: 0.5rem;
+        width: 80%;
+    }
+
+    .game-controller img{
+        margin-left: 3.5rem;
+    }
+    .controller-btn-container a{
+        
+        font-size: 1em;
+    }
+
+      .flex-grid {
+        margin: -16rem 0 0 5rem;
+    }
+      .footer-logo img{
+        width:2rem;
+        border-radius: 50%;
+    }
+      .copyright p{
+        /* padding-top: 1rem; */
+        font-size: 1em;
+    }
+
+    
 }
 
+  
+  @media only screen and (min-width: 710px) and (max-width: 992px) {
+    
+    .nav-links{
+        
+        font-size: 1.8rem;  
+    }
+    
+    
+   
+    
+    
+    #welcome-display, #about-me-display, #why-fac-display, #gallery-display, #coding-display{
+   
+        
+    margin-top: 1.8rem;
+    width: 40vh;
+    
+   
+    }   
+
+    
+    
+    .font-size-h3 {
+        font-size: 3em;
+        
+    }
+    
 
 
 
+    .desktop-screen p {
+     font-size: 1.5em;
+    }
 
-/*  */
-
+    .desktop-container img{
+        
+       height: 100%;
+       width: 100%
+    }
 
   
-  
-  /* z-index: 150; */
+
+    .carousel{
+        margin-top: 0.5rem;
+        width: 70%;
+    }
+    
+
+    
+    .game-controller img{
+       margin-left: -5rem;
+    }
+    .controller-btn-container a{
+        
+        font-size: 1em;
+    }
+
+    .game-controller img {
+        
+        height: 100%;
+        width: 100%;
+        
+    }
+
+      .flex-grid {
+          
+        margin: -10rem 0 0 1rem;
+    }
+        .row1{
+            grid-column: 2/4;
+            grid-row: 3/4;
+            justify-self: center;
+            
+        }
+        .row4{
+            grid-column: 5/6;
+            grid-row: 3/4;
+        }
+        /* links posi */
+        .row5{
+            grid-column: 5/6;
+            grid-row: 5/6;
+            
+            /* z-index: 150; */
+        }
+    
+    footer {
+        height: 13vh;
+    }
+      .footer-logo img{
+        width:2rem;
+        border-radius: 50%;
+    }
+      .copyright p{
+        /* padding-top: 1rem; */
+        font-size: 1.5em;
+    }
+
+
+  }
+
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
+    
+    .nav-links{
+        
+        font-size: 1.8rem;  
+    }
+    
+    
+
+    
+    
+    #welcome-display, #about-me-display, #why-fac-display, #gallery-display, #coding-display{
+   
+        
+    margin-top: 2rem;
+    width: 40vh;
+    
+   
+    }   
+
+    
+    
+    .font-size-h3 {
+        font-size: 4em;
+        
+    }
+    
+
+
+
+    .desktop-screen p {
+     font-size: 1.5em;
+    }
+
+    .desktop-container img{
+        
+       height: 100%;
+       width: 100%
+    }
 
   
+
+    .carousel{
+        margin-top: 0.5rem;
+        width: 70%;
+    }
+    
+
+    
+    .game-controller img{
+       margin-left: -5rem;
+    }
+    .controller-btn-container a{
+        
+        font-size: 1em;
+    }
+
+    .game-controller img {
+        
+        height: 100%;
+        width: 100%;
+        
+    }
+
+      .flex-grid {
+         
+        margin: -10rem 0 0 1rem;
+    }
+        .row1{
+            grid-column: 3/4;
+            grid-row: 3/4;
+            justify-self: end;
+            
+        }
+    /* about me position */
+        .row2 {
+            
+            grid-column: 4/5;
+            grid-row: 3/4 ;
+            justify-self: end;
+        }
+
+        .row4{
+            grid-column: 5/7;
+            grid-row: 3/4;
+        }
+        /* links posi */
+        .row5{
+            grid-column: 5/6;
+            grid-row: 5/6;
+            
+            /* z-index: 150; */
+        }
+    
+    footer {
+        height: 13vh;
+    }
+      .footer-logo img{
+        width:2rem;
+        border-radius: 50%;
+    }
+      .copyright p{
+        /* padding-top: 1rem; */
+        font-size: 1.5em;
+    }
+
+
+  }
+
+  @media only screen and (min-width: 1200px) {
+    
+    .nav-links{
+        
+        font-size: 1.8rem;  
+    }
+    
+    
+
+    
+    
+    #welcome-display, #about-me-display, #why-fac-display, #gallery-display, #coding-display{
+   
+        
+    margin-top: 1rem;
+    width: 40vh;
+    
+   
+    }   
+
+    
+    
+    .font-size-h3 {
+        font-size: 4em;
+        
+    }
+    
+
+
+
+    .desktop-screen p {
+     font-size: 1.5em;
+    }
+
+    .desktop-container img{
+        
+       height: 100%;
+       width: 100%
+    }
+
   
+
+    .carousel{
+        margin-top: 0.5rem;
+        width: 70%;
+    }
+    
+
+    
+    .game-controller img{
+       margin-left: -5rem;
+    }
+    .controller-btn-container a{
+        
+        font-size: 1em;
+    }
+
+    .game-controller img {
+        
+        height: 100%;
+        width: 100%;
+        
+    }
+
+      .flex-grid {
+          
+        margin: -10rem 0 0 1rem;
+    }
+        .row1{
+            grid-column: 4/5;
+            grid-row: 3/4;
+            
+            
+        }
+/* about me position */
+        .row2 {
+            
+            grid-column: 4/5;
+            grid-row: 3/4 ;
+            justify-self: end;
+        }
+
+        .row4{
+            grid-column: 5/7;
+            grid-row: 3/4;
+        }
+        /* links posi */
+        .row5{
+            grid-column: 5/6;
+            grid-row: 5/6;
+            
+            /* z-index: 150; */
+        }
+    
+    footer {
+        height: 13vh;
+    }
+      .footer-logo img{
+        width:2rem;
+        border-radius: 50%;
+    }
+      .copyright p{
+        /* padding-top: 1rem; */
+        font-size: 1.5em;
+    }
+
+
+  }
